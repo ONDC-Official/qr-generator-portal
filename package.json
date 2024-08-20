@@ -5,8 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"predeploy": "npm run build",
-		"deploy": "vite build ",
+		"deploy": "vite build && gh-pages -d dist",
 		"build": "tsc && vite build",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview"
@@ -45,6 +44,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://ondc-official.github.io/qr-generator-portal/"
-	}
+		"url": "git@github.com:ondc-official/qr-generator-portal.git"
+	},
+	"homepage": "https://ondc-official.github.io/qr-generator-portal/"
 }
